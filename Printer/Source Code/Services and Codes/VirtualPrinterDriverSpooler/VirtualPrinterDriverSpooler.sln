@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VirtualPrinterDriverSpooler", "VirtualPrinterDriverSpooler\VirtualPrinterDriverSpooler.vcxproj", "{0B847FD8-C56A-49FE-9126-B40FB6586A8A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VirtualPrinterSpoolerUnitTest", "VirtualPrinterDriverSpooler\VirtualPrinterSpoolerUnitTest.vcxproj", "{E24974CF-8574-43B9-BCC9-5EB3B5A728AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B847FD8-C56A-49FE-9126-B40FB6586A8A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0B847FD8-C56A-49FE-9126-B40FB6586A8A}.Debug|Win32.Build.0 = Debug|Win32
+		{0B847FD8-C56A-49FE-9126-B40FB6586A8A}.Release|Win32.ActiveCfg = Release|Win32
+		{0B847FD8-C56A-49FE-9126-B40FB6586A8A}.Release|Win32.Build.0 = Release|Win32
+		{E24974CF-8574-43B9-BCC9-5EB3B5A728AC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E24974CF-8574-43B9-BCC9-5EB3B5A728AC}.Debug|Win32.Build.0 = Debug|Win32
+		{E24974CF-8574-43B9-BCC9-5EB3B5A728AC}.Release|Win32.ActiveCfg = Release|Win32
+		{E24974CF-8574-43B9-BCC9-5EB3B5A728AC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BCEEED0-322C-40B0-9F2E-2CF276FA2E80}
+	EndGlobalSection
+EndGlobal

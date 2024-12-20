@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TaxDomePrinterDriver.gpd" />
+    <None Include="TaxDomePrinterDriver-AutoConfig-uni.gdl" />
+    <None Include="TaxDomePrinterDriver-manifest.ini" />
+    <None Include="TaxDomePrinterDriver-constraints.js" />
+    <None Include="TaxDomePrinterDriver-DriverEvents.xml" />
+    <None Include="TaxDomePrinterDriver-QueueProperties.xml" />
+    <None Include="TaxDomePrinterDriver-DevModeMap.xml" />
+    <None Include="TaxDomePrinterDriver-Bidi-Spm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="TaxDomePrinterDriver.inf" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{050922AD-6312-4D67-A7AC-4401FA94F77A}</ProjectGuid>
+    <TemplateGuid>{68fdc621-7e7b-47c5-acd7-ddcfa68cb8c4}</TemplateGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <SignMode>Off</SignMode>
+    <DriverType>Package</DriverType>
+    <Configuration>Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">Win32</Platform>
+    <INFGateToolPath>Tools\x86\</INFGateToolPath>
+    <RootNamespace>TaxDomePrinterDriver</RootNamespace>
+    <ProjectName>TaxDomePrinterDriver</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <PlatformToolset>WindowsUserModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Utility</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <PlatformToolset>WindowsUserModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Utility</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <PlatformToolset>WindowsUserModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Utility</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <PlatformToolset>WindowsUserModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Utility</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <PlatformToolset>WindowsUserModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Utility</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <PlatformToolset>WindowsUserModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Utility</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <DebuggerFlavor>DbgengRemoteDebugger</DebuggerFlavor>
+    <Inf2CatWindowsVersionList>$(Inf2CatWindowsVersionList),Vista_X86,7_X86</Inf2CatWindowsVersionList>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <DebuggerFlavor>DbgengRemoteDebugger</DebuggerFlavor>
+    <Inf2CatWindowsVersionList>$(Inf2CatWindowsVersionList),Vista_X86,7_X86</Inf2CatWindowsVersionList>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebuggerFlavor>DbgengRemoteDebugger</DebuggerFlavor>
+    <Inf2CatWindowsVersionList>$(Inf2CatWindowsVersionList),Vista_X64,7_X64</Inf2CatWindowsVersionList>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebuggerFlavor>DbgengRemoteDebugger</DebuggerFlavor>
+    <Inf2CatWindowsVersionList>$(Inf2CatWindowsVersionList),Vista_X64,7_X64</Inf2CatWindowsVersionList>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <DebuggerFlavor>DbgengRemoteDebugger</DebuggerFlavor>
+    <Inf2CatWindowsVersionList>$(Inf2CatWindowsVersionList),Vista_X86</Inf2CatWindowsVersionList>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <DebuggerFlavor>DbgengRemoteDebugger</DebuggerFlavor>
+    <Inf2CatWindowsVersionList>$(Inf2CatWindowsVersionList),Vista_X86</Inf2CatWindowsVersionList>
+  </PropertyGroup>
+  <Target Name="GetDriverProjectAttributes" Returns="@(DriverProjectAttributes)">
+    <ItemGroup Condition="'$(PlatformToolset)'=='WindowsUserModeDriver10.0'">
+      <DriverProjectAttributes Include="$(ProjectGuid)">
+        <DriverType>$(DriverType)</DriverType>
+        <PlatformToolset>$(PlatformToolset)</PlatformToolset>
+        <IsKernelModeToolset>$(IsKernelModeToolset)</IsKernelModeToolset>
+        <IsUserModeToolset>$(IsUserModeToolset)</IsUserModeToolset>
+        <ProjectPath>$(MSBuildProjectFullPath)</ProjectPath>
+      </DriverProjectAttributes>
+    </ItemGroup>
+  </Target>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(WDKContentRoot)$(INFGateToolPath)INFGate.exe" TaxDomePrinterDriver.inf /WDK</Command>
+      <Message>Running INFGate...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(WDKContentRoot)$(INFGateToolPath)INFGate.exe" TaxDomePrinterDriver.inf /WDK</Command>
+      <Message>Running INFGate...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(WDKContentRoot)$(INFGateToolPath)INFGate.exe" TaxDomePrinterDriver.inf /WDK</Command>
+      <Message>Running INFGate...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(WDKContentRoot)$(INFGateToolPath)INFGate.exe" TaxDomePrinterDriver.inf /WDK</Command>
+      <Message>Running INFGate...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Link>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(WDKContentRoot)$(INFGateToolPath)INFGate.exe" TaxDomePrinterDriver.inf /WDK</Command>
+      <Message>Running INFGate...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Link>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(WDKContentRoot)$(INFGateToolPath)INFGate.exe" TaxDomePrinterDriver.inf /WDK</Command>
+      <Message>Running INFGate...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <FilesToPackage Include="C:\Projects\TaxDome\TaxDomePrinter\Debug\TaxDomePrinterDriver">
+      <PackageRelativeDirectory>
+      </PackageRelativeDirectory>
+    </FilesToPackage>
+    <FilesToPackage Include="TaxDomePrinterDriver-AutoConfig-uni.gdl" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      <PackageRelativeDirectory>
+      </PackageRelativeDirectory>
+    </FilesToPackage>
+    <FilesToPackage Include="TaxDomePrinterDriver-Bidi-Spm.xml" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      <PackageRelativeDirectory>
+      </PackageRelativeDirectory>
+    </FilesToPackage>
+    <FilesToPackage Include="TaxDomePrinterDriver-constraints.js" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      <PackageRelativeDirectory>
+      </PackageRelativeDirectory>
+    </FilesToPackage>
+    <FilesToPackage Include="TaxDomePrinterDriver-DevModeMap.xml" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      <PackageRelativeDirectory>
+      </PackageRelativeDirectory>
+    </FilesToPackage>
+    <FilesToPackage Include="TaxDomePrinterDriver-DriverEvents.xml" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      <PackageRelativeDirectory>
+      </PackageRelativeDirectory>
+    </FilesToPackage>
+    <FilesToPackage Include="TaxDomePrinterDriver-manifest.ini" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      <PackageRelativeDirectory>
+      </PackageRelativeDirectory>
+    </FilesToPackage>
+    <FilesToPackage Include="TaxDomePrinterDriver-PipelineConfig.xml" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      <PackageRelativeDirectory>
+      </PackageRelativeDirectory>
+    </FilesToPackage>
+    <FilesToPackage Include="TaxDomePrinterDriver-QueueProperties.xml" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      <PackageRelativeDirectory>
+      </PackageRelativeDirectory>
+    </FilesToPackage>
+    <FilesToPackage Include="TaxDomePrinterDriver.gpd" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      <PackageRelativeDirectory>
+      </PackageRelativeDirectory>
+    </FilesToPackage>
+    <FilesToPackage Include="..\TaxDomePrinterDriver Driver Property Bag\bin\release\*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TaxDomePrinterDriver Driver Property Bag\TaxDomePrinterDriver Driver Property Bag.csproj">
+      <Project>{df2cb89b-24bb-4f43-bfd2-97388e042c05}</Project>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="TaxDomePrinterDriver-PipelineConfig.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

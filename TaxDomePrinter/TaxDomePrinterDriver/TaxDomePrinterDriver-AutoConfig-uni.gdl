@@ -1,0 +1,38 @@
+*%******************************************************************************************
+*% ACnfgUni.GDL
+*% This file implements the  *BidiQuery, *BidiResponse and *Option elements that correspond
+*% to the DuplexUnit feature in the driver GPD file. The feature
+*% name in the GDL file should exaclty match the corresponding feature and option names in the GPD.
+*%
+*% More GDL Autoconfiguration samples are found in the Windows Driver Kit "AutoConfig" sample
+*% http://msdn.microsoft.com/en-us/library/ff545148(VS.85).aspx
+*%******************************************************************************************
+
+*%******************************************************************************************
+*%                                      Duplex Unit
+*%******************************************************************************************
+
+*Feature: DuplexUnit
+{
+        *FeatureType: PRINTER_PROPERTY
+        *BidiQuery: DuplexUnit
+        {
+                *QueryString: "\Printer.Configuration.DuplexUnit:Installed"
+        }
+
+        *BidiResponse: DuplexUnit
+        {
+                *ResponseType: BIDI_BOOL
+                *ResponseData: ENUM_OPTION(DuplexUnit)
+        }
+
+        *Option: FALSE
+        {
+                *BidiValue: BOOL(FALSE)
+        }
+
+        *Option: TRUE
+        {
+                *BidiValue: BOOL(TRUE)
+        }
+}

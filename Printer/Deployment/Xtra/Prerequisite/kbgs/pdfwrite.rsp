@@ -1,0 +1,9 @@
+-IXtra\Prerequisite\kbgs\kbbin\lib;Xtra\Prerequisite\kbgs\fonts
+ -sDEVICE=pdfwrite
+ -r600
+ -dNOPAUSE
+ -dSAFER
+ -dAutoRotatePages=/All
+ -dPDFFitPage
+ -sPAPERSIZE=letter
+ -sOutputFile="Xtra\VPDriver.PDF"

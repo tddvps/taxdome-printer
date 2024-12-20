@@ -1,0 +1,12 @@
+﻿<de:DriverEvents xmlns:de="http://schemas.microsoft.com/windows/2011/08/printing/driverevents" schemaVersion="4.0">
+  <DriverEvent eventId="{A04CF0FC-1CEB-4C62-B967-6F0AE5C5F81E}">
+    <Transport>USB</Transport>
+    <Transport>WSD</Transport>
+    <Query>\Printer.Consumables</Query>
+    <Trigger result="\Printer.Consumables.Yellow:Level" comparison="LessThan" value="21">
+      <StandardMessage resourceId="132">
+        <StringParameter index="1" resourceId="2002" />
+      </StandardMessage>
+    </Trigger>
+  </DriverEvent>
+</de:DriverEvents>

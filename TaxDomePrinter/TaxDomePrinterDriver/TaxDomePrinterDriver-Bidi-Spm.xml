@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<bidi:Schema xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
+    <Property name='Printer'>
+      <Property name="Layout">
+        <Property name="InputBins">
+          <InputBin name="TopBin"    mibName="TRAY 1"/>
+          <InputBin name="BottomBin" mibName="TRAY 2"/>
+        </Property>
+      </Property>        <!--   Add IHV Extensions to the \Printer section fo the Bidi Schema here  -->
+    </Property>
+
+    <!--   Add a new Property element here to include IHV Bidi Schema extensions outside the \Printer area  -->
+
+</bidi:Schema>
